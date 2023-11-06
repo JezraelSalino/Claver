@@ -1,0 +1,22 @@
+.navbar{
+  padding: 10px 40px;
+}
+#navbarDropdown{
+  color: rgb(0, 0, 0,0.8);
+}
+.dropdown-menu {
+  display: none;
+}
+
+/* Show dropdown content when the dropdown is hovered */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.user img{
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user{
+  align-items: center;
+}
