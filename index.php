@@ -3,7 +3,7 @@ include_once 'header.php';
 ?>
 
 <div class="container">
-    
+    HOME
 </div>
 
 <?php

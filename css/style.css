@@ -1,5 +1,13 @@
+body{
+  background-color: #F8F9FA;
+}
+.container{
+  background-color: #FFFF;
+  height: 100vh;
+}
 .navbar{
   padding: 10px 40px;
+  background-color: #ECECF1;
 }
 #navbarDropdown{
   color: rgb(0, 0, 0,0.8);
@@ -19,4 +27,102 @@
 }
 .user{
   align-items: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 10px;
+}
+.dropdown-content a {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  outline: none;
+  border: none;
+}
+.user:hover .dropdown-content {
+  display: block;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Optional styles for spacing and alignment */
+.header h6 {
+  margin: 0;
+}
+
+.header button {
+  margin-left: auto;
+}
+.legislators-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.legislators-image img{
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.modal .nav-link {
+  border: none;
+  color: #212529;
+  font-size: 1.1rem;
+}
+.modal .nav-tabs .nav-link.active {
+  border: none;
+  font-weight: 600;
+}
+.modal .nav-tabs {
+  border: none;
+}
+.modal label{
+  margin-bottom: 5px;
+}
+
+.table td img{
+  height: 70px;
+  border-radius: 50%;
+}
+.modal .btn-primary{
+  color: #FFFF;
+  font-weight: 600;
+}
+#addModal .modal-dialog{
+  max-width: 1300px;
+}
+.modal .modal-body {
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox */
+}
+
+.modal .modal-body::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.modal .modal-body::-webkit-scrollbar-thumb {
+  background: #ECECF1; /* Change the color of the scrollbar thumb */
+  border-radius: 6px; /* Make the scrollbar thumb round */
+}
+
+.modal .modal-body::-webkit-scrollbar-track {
+  background: #FFFFFF; /* Change the color of the scrollbar track */
 }
