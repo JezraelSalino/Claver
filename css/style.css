@@ -112,6 +112,7 @@ body{
 .modal .modal-body {
   overflow-y: auto;
   scrollbar-width: thin; /* For Firefox */
+  padding: 0;
 }
 
 .modal .modal-body::-webkit-scrollbar {
@@ -125,4 +126,16 @@ body{
 
 .modal .modal-body::-webkit-scrollbar-track {
   background: #FFFFFF; /* Change the color of the scrollbar track */
+}
+.custom-select{
+  border: none;
+  cursor: pointer;
+  margin-top: 2.5px;
+}
+.custom-select:focus{
+  outline: none;
+  box-shadow: none;
+}
+.table .remarks{
+  padding: 0;
 }

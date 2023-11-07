@@ -158,11 +158,15 @@ include_once 'header.php';
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 p-1">
                     <label>SESSION DATE</label>
-                    <input type="text" class="form-control">
+                    <input type="date" class="form-control">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 p-1">
                     <label>SESSION TYPE</label>
-                    <input type="text" class="form-control">
+                    <select class="form-select">
+                    <option value="1" selected>Regular Session</option>
+                    <option value="2">Regular Session</option>
+                    <option value="3">Regular Session</option>
+                    </select>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 p-1">
                     <label>PRESIDING OFFICER</label>
@@ -203,17 +207,38 @@ include_once 'header.php';
                             <tr>
                                 <td>display all entire data</td>
                                 <td>display all entire data</td>
-                                <td>display all entire data</td>
+                                <td class="remarks">
+                                <select class="form-select custom-select">
+                                <option value="1" selected>Absent</option>
+                                <option value="2">Present</option>
+                                <option value="3">On-Leave</option>
+                                <option value="4">Office Business</option>
+                                </select>
+                                </td>
                             </tr>
                             <tr>
                                 <td>display all entire data</td>
                                 <td>display all entire data</td>
-                                <td>display all entire data</td>
+                                <td class="remarks">
+                                <select class="form-select custom-select">
+                                <option value="1" selected>Absent</option>
+                                <option value="2">Present</option>
+                                <option value="3">On-Leave</option>
+                                <option value="4">Office Business</option>
+                                </select>
+                                </td>
                             </tr>
                             <tr>
                                 <td>display all entire data</td>
                                 <td>display all entire data</td>
-                                <td>display all entire data</td>
+                                <td class="remarks">
+                                <select class="form-select custom-select">
+                                <option value="1" selected>Absent</option>
+                                <option value="2">Present</option>
+                                <option value="3">On-Leave</option>
+                                <option value="4">Office Business</option>
+                                </select>
+                                </td>
                             </tr>
                         </tbody>
                         </table>

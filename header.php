@@ -59,9 +59,8 @@ if(!isset($_SESSION["userid"])){
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="document_tracking.php">Manage Document Requests</a></li>
-            <li><a class="dropdown-item" href="#">Manage Resolution</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="manage_resolution.php">Manage Resolution</a></li>
+            <li><a class="dropdown-item" href="manage_ordinance.php">Manage Ordinance</a></li>
           </ul>
         </li>
       </ul>

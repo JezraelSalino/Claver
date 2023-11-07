@@ -195,6 +195,7 @@ include_once 'header.php';
 <div class="modal fade" id="addModal" aria-hidden="true" data-bs-backdrop="static" aria-labelledby="addModalLabel" tabindex="-1">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
+    <form action="includes/legislators_insert.inc.php" method="post">
       <div class="modal-header">
         <h5 class="modal-title" id="addModalLabel">Add Legislator</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -215,56 +216,61 @@ include_once 'header.php';
                     <button class="nav-link" id="addfourth-tab" data-bs-toggle="tab" data-bs-target="#addfourth" type="button" role="tab" aria-controls="addfourth" aria-selected="false">Image Profile</button>
                 </li>
             </ul>
+            
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="addfirst" role="tabpanel" aria-labelledby="addfirst-tab">
                     <div class="row p-3">
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >ID NUMBER</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="ID_number" id="ID_number" class="form-control" required>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >STATUS</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="status" id="status" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >LAST NAME</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="last_name" id="last_name" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >FIRST NAME</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="first_name" id="first_name" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >MIDDLE NAME</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="mid_name" id="mid_name" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
-                            <label >SEX</label>
-                            <input type="text" class="form-control">
+                        <label>Sex</label>
+                        <select class="form-select" name="gender" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        </select>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >CIVIL STATUS</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="civil_status" id="civil_status" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >BIRTH DATE</label>
-                            <input type="text" class="form-control">
+                            <input type="date" name="birth_date" id="birth_date" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >EDUCATIONAL ATTAINMENT</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="educ_attainment" id="educ_attainment" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >CONTACT NO.</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="contact_num" id="contact_num" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >EMAIL ADDRESS</label>
-                            <input type="text" class="form-control">
+                            <input type="email" name="email_add" id="email_add" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >RESIDENTIAL ADDRESS</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="residential_add" id="residential_add" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -272,35 +278,35 @@ include_once 'header.php';
                 <div class="row p-3">
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >SSS ID</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="sss_id" id="sss_id" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >GSIS ID NO.</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="gsis_id_num" id="gsis_id_num" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >TIN NO. ID</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="tin_num_id" id="tin_num_id" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >PHILHEALTH ID</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="phil_id" id="phil_id" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >PAG-IBIG</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="pag_ibig_id" id="pag_ibig_id" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >ELIGIBILITY / LICENCE NO.</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="license_num" id="license_num" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
-                            <label >DATE ELECTED</label>
-                            <input type="text" class="form-control">
+                            <label >DATE EMPLOYED</label>
+                            <input type="date" name="date_elected" id="date_elected" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >DATE ENDED</label>
-                            <input type="text" class="form-control">
+                            <input type="date" name="date_ended" id="date_ended" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -308,15 +314,15 @@ include_once 'header.php';
                 <div class="row p-3">
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >NAME</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="emergency_name" id="emergency_name" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >CONTACT NO.</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="emergency_contact_num" id="emergency_contact_num" class="form-control">
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                             <label >RELATIONSHIP</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="emergency_relationship" id="emergency_relationship" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -329,11 +335,14 @@ include_once 'header.php';
                 </div>
                 </div>
             </div>
+            
         </div>
       </div>
       <div class="modal-footer">
+      <button type="submit" name="submit" class="btn btn-primary">Submit Legislator</button>
         <button class="btn btn-primary" data-bs-target="#mainModal" data-bs-toggle="modal" data-bs-dismiss="modal">Back to main</button>
       </div>
+      </form>
     </div>
   </div>
 </div>
